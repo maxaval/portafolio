@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Creación de Sitios Web y Aplicaciones Web</title>    
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand mr-auto" href="#">MaxiTech</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand mr-auto" href="index.html">MaxiTech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
                         <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -26,76 +28,178 @@
                 </div>
             </div>
         </nav>
-    </header>    
+    </header>
     <main>
-        <div class="portofolio-img-principal">            
-            <div class="image-container">
-                <img alt="Brain" src="images/brain.jpg" class="efecto-imagen"/>
-                <div class="mask"></div>
+        <!--<section id="inicio" class="banner">
+            <div class="text-section">
+                <a href="#">
+                    <h1>&lt;Backend&gt;</h1>
+                    <p>Diseñador de productos API para la interconexión segura y productiva.</p>
+                </a>
             </div>
             <div class="text-section">
-                <h1>&lt;Backend&gt;</h1>
-                <p>Product designer specialising in UI design and design systems.</p>
+                <a href="#">
+                    <h1>&lt;Frontend&gt;</h1>
+                    <p>Desarrollador front-end que escribe código limpio, elegante y eficiente.</p>
+                </a>
             </div>
-            <div class="text-section">
-                <h1>&lt;Frontend&gt;</h1>
-                <p>Front end developer who writes clean, elegant and efficient code.</p>
+        </section>-->
+
+        <section id="inicio" class="presentation">
+            <div>
+                <div class="col-md-7 text-presentation">
+                    <h1>Hola, soy Maximiliano Avalos</h1>
+                    <h4>Desarrollador Web y Apasionado por la Tecnología</h4>
+                    <p>Como profesional apasionado por la tecnología, he dedicado mi carrera a crear soluciones web personalizadas para empresas. Mi enfoque se centra en la elegancia del diseño y la funcionalidad robusta. Permíteme presentarte lo que puedo ofrecer:</p>
+                </div>
+                <div class="col-md-5">                    
+                    <img id="personalinv" src="images/personalinv.png" alt="" class="img-fluid">                    
+                </div>
             </div>
-        </div>
-        <section id="inicio" class="container mt-5">
-            <h1 class="text-center">Bienvenido a mi portafolio</h1>
-            <p class="text-center">Desarrollador web con experiencia en la creación de sitios web y aplicaciones web utilizando tecnologías como Django, PostgreSQL, Python, HTML5, CSS y JavaScript.</p>
         </section>
+        <section id="about" class="container">
+            <div class="row">
+                <div class="col-md-4">                    
+                    <div class="card">                        
+                        <div class="card-body">
+                          <h4 class="card-title">Enfoque Personal</h4>
+                          <p class="card-text">Mi enfoque no solo se trata de escribir código, sino de crear experiencias significativas para los usuarios. Me apasiona encontrar soluciones elegantes a problemas complejos y asegurarme de que cada proyecto sea único y funcional.</p>
+                        </div>
+                        <img src="images/enfoque.jpg" class="card-img-top" alt="Enfoque Personal">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/idiomas.jpg" class="card-img-top" alt="Idiomas.">
+                        <div class="card-body">
+                          <h4 class="card-title">Idiomas</h4>
+                          <p class="card-text">Aunque mi nivel de inglés es fundamental, puedo comunicarme y comprender documentación técnica. Siempre estoy en constante aprendizaje para perfeccionar mis habilidades lingüísticas y ampliar mi dominio del idioma.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/innovacion.jpg" class="card-img-top" alt="innovacion y Tecnología">
+                        <div class="card-body">
+                          <h4 class="card-title">Innovación y Sofisticación</h4>
+                          <p class="card-text">Creo en la innovación constante. Cada línea de código que escribo busca la excelencia y la sofisticación. Mi objetivo es crear aplicaciones web que no solo funcionen de manera impecable, sino también cautiven con su elegancia y originalidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section id="tecnologias" class="container mt-5">
+            <h2 class="text-center">Tecnologías</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="images/logos/django-logo.svg" alt="Django Logo">
+                    <p>Django</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/postgresql-logo.svg" alt="PostgreSQL Logo">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/python-logo.svg" alt="Python Logo">
+                    <p>Python</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/html5-logo.svg" alt="HTML5 Logo">
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/css3-logo.svg" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/javascript-logo.svg" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-card">
+                    <img src="images/logos/cakephp-logo.svg" alt="CakePHP Logo">
+                    <p>CakePHP</p>
+                </div>
+            </div>
+        </section>
+
         <section id="proyectos" class="container mt-5">
             <h2 class="text-center">Proyectos</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card mb-3">
-                        <img src="images/imagen-proyecto1.jpg" class="card-img-top" alt="Imagen del proyecto 1">
+                        <img src="images/optimus.png" class="card-img-top" alt="Imagen del proyecto 1">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción del proyecto 1</p>
+                            <h5 class="card-title">OPTIMUS</h5>
+                            <p class="card-text">Diseñado para el Control Tributario de las Municipalidades de El Salvador</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card mb-3">
-                        <img src="images/imagen-proyecto2.jpg" class="card-img-top" alt="Imagen del proyecto 2">
+                        <img src="images/centinel.png" class="card-img-top" alt="Imagen del proyecto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción del proyecto 2</p>
+                            <h5 class="card-title">CENTURION</h5>
+                            <p class="card-text">Diseñado para el Control de Expedientes Clínicos y Laboratorio de niños y niñas del CDI de ONG ANADES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="images/controltotal.png" class="card-img-top" alt="Imagen del proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">ControlTotal</h5>
+                            <p class="card-text">Plataforma para el control de Invenario y Facturación para Tiendas y Emprendimientos</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="tecnologias" class="container mt-5">
-            <h2 class="text-center">Tecnologías</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Django</li>
-                <li class="list-group-item">PostgreSQL</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">HTML5</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">JavaScript</li>
-            </ul>
-        </section>
+        
         <section id="contacto" class="container mt-5">
             <h2 class="text-center">Contacto</h2>
             <p class="text-center">Si deseas contactarme, puedes hacerlo a través de:</p>
-            <ul class="list-group">
-                <li class="list-group-item">Correo electrónico: <a href="mailto:correo@example.com">correo@example.com</a></li>
-                <li class="list-group-item">Teléfono: 1234567890</li>
-                <li class="list-group-item">Redes sociales: <a href="https://www.linkedin.com/in/perfil/">LinkedIn</a>, <a href="https://github.com/usuario">GitHub</a></li>
-            </ul>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="front">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="back">
+                        <p>Correo electrónico:</p>
+                        <a href="mailto:maxaval@gmail.com">maxaval@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="front">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="back">
+                        <p>Teléfono:</p>
+                        <span>+503 7004 6771</span>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="front">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="back">
+                        <p>Redes sociales:</p>
+                        <ul>
+                            <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></i></a><a href="https://github.com/maxaval"><i class="fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
-    <footer class="footer float-end">
-        <div class="text-center p-3">
+    <footer>
+        <div class="footer">
             &copy; 2023. Todos los derechos reservados.
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
