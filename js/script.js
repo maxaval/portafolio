@@ -1,4 +1,4 @@
-/*const banner = document.querySelector('.banner');
+const banner = document.querySelector('.banner');
 const textSections = document.querySelectorAll('.text-section');
 
 banner.addEventListener('mousemove', (e) => {
@@ -14,4 +14,4 @@ banner.addEventListener('mousemove', (e) => {
       textSection.style.opacity = percentage / 100;
     }
   });
-});*/
+});
